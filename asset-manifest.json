@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/credit-card-info/static/css/main.41de9f9f.css",
-    "main.js": "/credit-card-info/static/js/main.c1eebd87.js",
+    "main.css": "/credit-card-info/static/css/main.0ea5d76f.css",
+    "main.js": "/credit-card-info/static/js/main.319b1675.js",
     "static/media/backgrounnd-card.jpeg": "/credit-card-info/static/media/backgrounnd-card.8cbd621dd4e6753632c2.jpeg",
     "static/media/background.png": "/credit-card-info/static/media/background.2e5d56b86175455dc5db.png",
     "static/media/mastercardLogo.png": "/credit-card-info/static/media/mastercardLogo.4b56dc0002be825b9d51.png",
     "static/media/chipCard.png": "/credit-card-info/static/media/chipCard.891345f4f9df869bcca0.png",
     "static/media/visaLogo.png": "/credit-card-info/static/media/visaLogo.226dc043e1fb1dcc5729.png",
     "index.html": "/credit-card-info/index.html",
-    "main.41de9f9f.css.map": "/credit-card-info/static/css/main.41de9f9f.css.map",
-    "main.c1eebd87.js.map": "/credit-card-info/static/js/main.c1eebd87.js.map"
+    "main.0ea5d76f.css.map": "/credit-card-info/static/css/main.0ea5d76f.css.map",
+    "main.319b1675.js.map": "/credit-card-info/static/js/main.319b1675.js.map"
   },
   "entrypoints": [
-    "static/css/main.41de9f9f.css",
-    "static/js/main.c1eebd87.js"
+    "static/css/main.0ea5d76f.css",
+    "static/js/main.319b1675.js"
   ]
 }
