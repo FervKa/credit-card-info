@@ -20,3 +20,7 @@ Sorry, I used a library to make the toast for user feedback, since I ran into an
 
 **Note: about ccv encryption and dataset**
 As you know, at the 8 numeral, you ask for the ccv to be encrypted and stored in a dataset. I performed the encryption with a Js own function, but, deprecated called `btoa`. I understand what the dataset is, however, I do not know and did not find a way to do it in ReactJs, which was the library that I used for this project.
+
+
+
+This Message is for a test Only in Git
