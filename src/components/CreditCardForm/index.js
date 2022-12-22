@@ -12,19 +12,10 @@ export const CreditCardForm = (props) => {
     ccvNumber,
     setCcvNumber,
     setNameCard,
-    onSubmit
+    onSubmit,
   } = props
 
-  useEffect(() => {
-    /*Esta parte del código sirve para eliminar el Scroll del input number */
-    const input = document.getElementById("inputCreditNumber")
-    input.addEventListener("mousewheel",
-      function () {
-        this.blur()
-      }
-    )
-  }, [])
-
+  //This useEffect, is used to call the functions that create the months and years, for input of the select
   useEffect(() => {
     createMonths()
     createYears()

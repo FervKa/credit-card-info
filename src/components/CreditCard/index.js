@@ -30,8 +30,10 @@ export const CreditCard = (props) => {
         <div className='frontCard'>
           <div className='dataCard'>
             <div className='dataGroup' id='numberCard'>
+
               <p className='labelCard'>Number Card</p>
               <p className='numberCreditCard'>{creditNumber || '#### #### #### ####'}</p>
+
             </div>
             <img src={chipCard} className='chip-card' alt='' />
 
@@ -40,10 +42,12 @@ export const CreditCard = (props) => {
             </div>
 
             <div className='flexContainer'>
+
               <div className='groupInfo' id='name'>
                 <p className='labelCard'>Name Card</p>
                 <p className='nameCard'>{nameCard || 'NAME CARD'}</p>
               </div>
+
               <div className='groupInfo' id='expiration'>
                 <p className='labelCard'>Expiration</p>
                 <p className='expiration'>
@@ -52,8 +56,8 @@ export const CreditCard = (props) => {
                   <span className='year'>{yearSelected || 'YY'}</span>
                 </p>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
 
@@ -83,6 +87,7 @@ export const CreditCard = (props) => {
 
       </section>
     </div >
+
     <CreditCardForm
       {...props}
       onSubmit={onSubmit}

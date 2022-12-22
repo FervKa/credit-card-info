@@ -4,6 +4,13 @@ Hello!
 My Name is Stiven, I am a Web Developer and I made this.
 This project has no .env, so, it can be used anywhere.
 
+## Initial Scripts
+
+In the project, you have to run as the first step, the command:
+### `npm i --legacy-peer-deps`
+
+This command will install the node_modules folder, and install the necessary dependencies for its correct functioning.
+
 ## Available Scripts
 
 In the project directory, you can run:

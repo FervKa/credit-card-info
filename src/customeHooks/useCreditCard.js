@@ -5,7 +5,7 @@ import { useToasts } from 'react-toast-notifications'
 
 
 export const useCreditCard = (props) => {
-  const { setCardsSaved } = props
+  const { setCardsSaved, scrollToBottom } = props
   const { addToast } = useToasts()
   const [toogle, setToogle] = useState(false)
   const [creditNumber, setCreditNumber] = useState('')
@@ -15,6 +15,7 @@ export const useCreditCard = (props) => {
   const [nameCard, setNameCard] = useState('')
 
   const ImageLogo = (firstNumber) => {
+    //Used to render depending on the first credit card number.
     let aux;
     if (firstNumber.firstNumber === 4) {
       aux = visaLogo
@@ -41,6 +42,7 @@ export const useCreditCard = (props) => {
     } catch (error) {
       addToast('Upps... And Error Ocurred', { appearance: 'error', autoDismiss: true })
     }
+    scrollToBottom()
   }
   return {
     toogle,

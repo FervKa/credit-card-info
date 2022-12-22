@@ -1,5 +1,7 @@
 .styled-table {
   border-collapse: collapse;
+  background-color: #93619D;
+  color: white;
   border-radius: 15px;
   margin: 25px 0;
   font-size: 1em;
