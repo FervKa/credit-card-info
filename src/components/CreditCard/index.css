@@ -1,0 +1,261 @@
+.card {
+  width: 100%;
+  max-width: 550px;
+  min-width: 550px;
+  position: relative;
+  color: white;
+  transition: .5s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.card.active {
+  transform: rotateY(180deg);
+}
+
+.card>div {
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px rgba(90, 16, 148, 0.3);
+}
+
+.card .frontCard {
+  width: 100%;
+  background: url(../../images/backgrounnd-card.jpeg);
+  background-size: cover;
+}
+
+.frontCard .logoTypeCard {
+  text-align: right;
+  min-height: 50px;
+}
+
+.imageTypeCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 70px;
+}
+
+.frontCard .chip-card {
+  width: 100%;
+  max-width: 60px;
+  margin: 10px 0 0 20px;
+}
+
+.frontCard .labelCard {
+  font-size: 16px;
+  color: #7d8994;
+  margin-bottom: 5px;
+}
+
+.frontCard .numberCreditCard {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.frontCard .nameCard {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.frontCard .expiration {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.frontCard .flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.backCard {
+  width: 100%;
+  background: url(../../images/backgrounnd-card.jpeg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.backCard .blackSpace {
+  height: 40px;
+  background: white;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.backCard .dataCard {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.backCard .dataCard p {
+  margin-bottom: 10px;
+}
+
+.backCard .dataCard #signature {
+  width: 70%;
+}
+
+.backCard .dataCard #signature .signature {
+  height: 40px;
+  background: rgb(192, 192, 192);
+}
+
+.backCard .dataCard #signature .signature p {
+  line-height: 40px;
+  font-family: cursive;
+  color: black;
+  font-size: 30px;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.backCard .dataCard #ccv {
+  width: 20%;
+}
+
+.backCard .dataCard #ccv .ccvCard {
+  background: white;
+  height: 40px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.backCard .infoCard {
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-text-stroke: 0.3px black;
+}
+
+.backCard .bankLink {
+  font-size: 14px;
+  color: white;
+}
+
+.cardForm {
+  background: white;
+  width: 70%;
+  max-width: 700px;
+  padding: 150px 30px 30px 30px;
+  border-radius: 40px;
+  position: relative;
+  top: -130px;
+  z-index: 1;
+}
+
+.cardForm label {
+  display: block;
+  color: #7d8994;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.cardForm input,
+.cardForm select,
+.submitButton {
+  border: 2px solid #CED6E0;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  transition: .3s ease all;
+  border-radius: 5px;
+}
+
+.cardForm input:hover,
+.cardForm select:hover {
+  border: 2px solid #93BDED;
+}
+
+.cardForm input:focus,
+.cardForm select:focus {
+  outline: rgb(4, 4, 4);
+  box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+}
+
+.cardForm input {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cardForm .flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardForm .expiration {
+  width: 50%;
+}
+
+.cardForm .ccv {
+  min-width: 100px;
+  width: 20%;
+}
+
+.cardForm .selectGroup {
+  width: 100%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.cardForm select {
+  appearance: none;
+}
+
+.cardForm .selectGroup .arrowDown {
+  position: absolute;
+  color: #CED6E0;
+  top: 18px;
+  right: 15px;
+  transition: .3s ease all;
+}
+
+.cardForm .selectGroup:hover .arrowDown {
+  color: #93bfed;
+}
+
+.buttonsGroup {
+  display: flex;
+}
+
+.buttonsGroup .submitButton,
+.buttonsGroup .resetButton {
+  border: none;
+  padding: 10px;
+  width: 50%;
+  margin: 10px;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonsGroup .submitButton {
+  border: 2px solid;
+  color: #00B937;
+}
+
+.buttonsGroup .resetButton {
+  border: 2px solid;
+  color: #D81E0A;
+}
